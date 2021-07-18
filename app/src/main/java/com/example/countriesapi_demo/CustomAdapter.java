@@ -5,7 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
@@ -41,6 +44,8 @@ public class CustomAdapter extends BaseAdapter {
         TextView countryName, capital;
         countryName = (TextView) convertView.findViewById(R.id.countryName);
         capital = (TextView) convertView.findViewById(R.id.capital);
+        ImageView imageView = (ImageView) convertView.findViewById(R.id.flag);
+        Glide.with(context).load("https://www.countryflags.io/"+arrayList.get(position).getAlpha2code()+"/flat/64.png").fitCenter().into(imageView);
         countryName.setText(arrayList.get(position).getCountryName());
         capital.setText(arrayList.get(position).getCapital());
         return convertView;

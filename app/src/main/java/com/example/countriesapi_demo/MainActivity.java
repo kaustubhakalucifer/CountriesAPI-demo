@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
                         itemModel model = new itemModel();
                         model.setCapital(jsonObject.getString("capital"));
                         model.setCountryName(jsonObject.getString("name"));
+                        model.setAlpha2code(jsonObject.getString("alpha2Code"));
                         arrayList.add(model);
                     }
 
