@@ -3,7 +3,7 @@
 git config --global user.name "Aditya Gupta"
 git config --global user.email "adityaofficialgupta@gmail.com"
 
-git clone https://kaustubhakalucifer:$PAT@github.com/kaustubhakalucifer/AndroidAppReleases
+git clone https://github.com/kaustubhakalucifer/AndroidAppReleases.git
 cd AndroidAppReleases
 
 rm -rf ${GITHUB_REPOSITORY#*/}*
