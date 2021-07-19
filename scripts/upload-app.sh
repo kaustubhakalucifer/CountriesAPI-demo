@@ -20,7 +20,7 @@ for file in app*; do
     fi
 done
 
-git branch -D master
-git branch -m master
+git branch -D main
+git branch -m main
 
-git push origin master --force
+git push origin main --force
