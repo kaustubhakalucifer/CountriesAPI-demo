@@ -1,7 +1,7 @@
 #!/bin/bash
 
-git config --global user.name "Kaustubh Solanki"
-git config --global user.email "kaustubhsolanki98@gmail.com"
+git config --global user.name "Aditya Gupta"
+git config --global user.email "adityaofficialgupta@gmail.com"
 
 git clone https://kaustubhakalucifer:$PAT@github.com/kaustubhakalucifer/AndroidAppReleases
 cd AndroidAppReleases
